@@ -1,0 +1,22 @@
+﻿@using WebAdmin.Models;
+@model IEnumerable<ProductCategory>
+<div class="main" bis_skin_checked="1">
+    <div class="container" bis_skin_checked="1">
+        <ul class="nav nav-underline nav-star">
+       
+                
+                    @foreach (var item in Model)
+                    { 
+                    <li onclick="render('./sanPham/traSua.html', 'content-sp')" class="nav-item">
+                        <a  href="@Url.Action("CategoryPro","Product", new { @ID = item.ID})">@item.Name</a>
+
+                    </li>
+                     }
+            
+        </ul>
+        <div id="content-sp" bis_skin_checked="1"></div>
+        <script>
+            render('./sanPham/all.html', 'content-sp')
+        </script>
+    </div>
+</div>

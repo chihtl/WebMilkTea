@@ -1,0 +1,18 @@
+
+/* main */
+.home-icon{
+    display: flex;
+}
+.img-icon img{
+    padding: 10px;
+}
+.form-contact .form-group{
+    margin-bottom: 15px;
+}
+.margin-icon{
+    margin-left: 100px;
+}
+/* footer */
+.color-footer{
+  color: aliceblue;
+}

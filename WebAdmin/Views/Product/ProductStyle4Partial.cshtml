@@ -1,0 +1,19 @@
+﻿@using WebAdmin.Models
+@model IEnumerable<Product>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12" bis_skin_checked="1">
+                <div class="card hover border-none" bis_skin_checked="1">
+                    <img src="@Url.Content("~/Content/images/" + item.Image)" class="card-img-top" alt="Hình 1">
+                    <div class="card-body" bis_skin_checked="1">
+                        <h5>@item.Name</h5>
+                        <p class="card-text">@item.Price.000<sup>đ</sup></p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

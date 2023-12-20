@@ -1,0 +1,78 @@
+
+/* main */
+.nav-link{
+  color: #000 !important;
+}
+.nav-star{
+  justify-content: start;
+}
+.card h-100 img{
+  width: 200px;
+  height: 200px;
+}
+.hover img{
+    transition: all 0.5s;
+
+}
+.hover:hover img{
+  transform: scale(1.1);
+}
+
+.title h2{
+  margin: 50px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+.border {
+  border: none ;
+}
+.add-to-cart{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #E48586;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.cap{
+  color: white;
+  font-weight: 500;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.card:hover .add-to-cart{
+  opacity: 1;
+  height: 70px;   
+}
+.card:hover .cap{
+  opacity: 1;
+}
+.card-body {
+  text-align: center;
+  font-weight: 600;
+  font-size: 19px;
+  color: #444;
+}
+.card{
+  margin-bottom: 30px;
+}
+.card-body{
+  padding-bottom: 50px;
+}
+.main{
+  padding: 100px 0px;
+}
+.row{
+  padding-top: 60px;
+}
+/* footer */
+.color-footer{
+  color: aliceblue;
+}

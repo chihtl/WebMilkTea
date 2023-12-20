@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none !important;
+  color: #000 !important;
+}
+#content {
+  padding-top: 107px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  height: 107px;
+  z-index: 10;
+  padding: 0px 8px;
+  display: flex;
+  align-items: center;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 132px;
+  height: 24px;
+  cursor: pointer;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+.nav .nav-item {
+  padding: 16px;
+  position: relative;
+  font-weight: 800;
+}
+.nav-item:hover {
+  color: #e48586;
+  cursor: pointer;
+}
+.header-right img {
+  padding: 8px;
+}
+.header-right img:hover {
+  color: #e48586;
+}
+/*  */
+.card h-100 img {
+  width: 200px;
+  height: 200px;
+}
+.hover img {
+  transition: all 0.5s;
+}
+.hover:hover img {
+  transform: scale(1.1);
+}
+
+.title h2 {
+  margin: 50px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+.add-to-cart {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #e48586;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cap {
+  color: white;
+  font-weight: 500;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.card:hover .add-to-cart {
+  opacity: 1;
+  height: 70px;
+}
+.card:hover .cap {
+  opacity: 1;
+}
+.card-body {
+  text-align: center;
+  font-weight: 600;
+  font-size: 19px;
+  color: #444;
+}
+.card {
+  margin-bottom: 30px;
+}
+.border-none {
+  border: none !important;
+}
+
+.card-img {
+  max-height: 360px;
+  overflow: hidden;
+}
+.mb-40 img {
+  max-width: 100%;
+}
+
+.color-footer {
+  color: aliceblue;
+}

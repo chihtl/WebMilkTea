@@ -1,0 +1,45 @@
+﻿@using WebAdmin.Models
+@model IEnumerable<Product>
+
+@if (Model.Any())//có ít nhất một sản phẩm
+{
+    var firstProduct = Model.First();
+    var lastProduct = Model.Last();
+
+    <div class="watch-area section-padding30" bis_skin_checked="1">
+        <div class="container" bis_skin_checked="1">
+            <div class="row align-items-center justify-content-between padding-130" bis_skin_checked="1">
+                <div class="col-lg-5 col-md-6" bis_skin_checked="1">
+                    <div class="watch-details mb-40" bis_skin_checked="1">
+                        <p>
+                            Hòa quyện hương thơm của trà và độ béo của sữa, trà sữa mới mang đến một trải nghiệm độc đáo và lôi cuốn.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-10" bis_skin_checked="1">
+                    <div class="choice-watch-img mb-40" bis_skin_checked="1">
+                        <img src="@Url.Content("~/Content/images/" + firstProduct.Image)" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between" bis_skin_checked="1">
+                <div class="col-lg-6 col-md-6 col-sm-10" bis_skin_checked="1">
+                    <div class="choice-watch-img mb-40" bis_skin_checked="1">
+                        <img src="@Url.Content("~/Content/images/" + lastProduct.Image)" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6" bis_skin_checked="1">
+                    <div class="watch-details mb-40" bis_skin_checked="1">
+                        <p>
+                            Khám phá hương vị mới mẻ với trà sữa, nơi sự sáng tạo và tinh tế hòa quyện để tạo nên một thức uống tuyệt vời.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>No products available.</p>
+}

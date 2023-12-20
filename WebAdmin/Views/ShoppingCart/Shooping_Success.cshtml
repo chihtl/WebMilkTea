@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Shopping_Success";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <div class="success-message">
+                <h2>Shopping Success!</h2>
+                <p>Your order has been placed successfully.</p>
+            </div>
+            <div class="continue-shopping-btn">
+                <a class="btn btn-success" href="@Url.Action("Index", "Home")">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa; 
+    }
+
+    .container {
+        padding: 50px 0;
+    }
+
+    .success-message {
+        background-color: #28a745; 
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .continue-shopping-btn {
+        margin-top: 20px;
+    }
+</style>

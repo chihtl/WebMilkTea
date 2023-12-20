@@ -1,0 +1,18 @@
+﻿@using WebAdmin.Models;
+@model IEnumerable<Product>
+@{
+    ViewBag.Title = "CateloryPro";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+}
+
+
+
+<div class="container">
+    <div class="row">
+        @if (Model != null)
+        { @Html.Action("MenuPartial", "Product");
+          @Html.Partial("~/Views/Product/ProductStyle1Partial.cshtml")
+        }
+    </div>
+</div>
+

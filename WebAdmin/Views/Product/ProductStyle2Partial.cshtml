@@ -1,0 +1,24 @@
+﻿@using WebAdmin.Models;
+@model IEnumerable<ProductCategory>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card hover">
+                    <div class="card-img">
+                        <img src="@Url.Content("~/Content/images/" + item.Image)"
+                             class="card-img-top"
+                             alt="Hình 1" />
+                    </div>
+                    <div class="card-body">
+                        <h5>@item.Name</h5>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
